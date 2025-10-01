@@ -1,0 +1,160 @@
+.quiz-section {
+  padding: 4rem 0;
+  background-color: rgba(212, 218, 237, 0.1);
+}
+
+.quiz-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.quiz-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.quiz-description {
+  color: var(--color-muted-foreground);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.quiz-container {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.quiz-results-container {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.quiz-results-card {
+  text-align: center;
+}
+
+.quiz-results-header {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.quiz-results-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.quiz-results-emoji {
+  font-size: 3.75rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-results-content {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quiz-score {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.quiz-score-message {
+  color: var(--color-muted-foreground);
+}
+
+.quiz-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quiz-result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.quiz-result-item-text {
+  font-size: 0.875rem;
+}
+
+.quiz-result-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.quiz-result-icon-success {
+  color: var(--color-success);
+}
+
+.quiz-result-icon-error {
+  color: var(--color-destructive);
+}
+
+.quiz-question-header {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quiz-question-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quiz-question-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.quiz-question-count {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+}
+
+.quiz-question-content {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quiz-question-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quiz-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1024px) {
+  .quiz-title {
+    font-size: 2.25rem;
+  }
+}

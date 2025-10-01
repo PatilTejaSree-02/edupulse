@@ -1,0 +1,20 @@
+.progress {
+  position: relative;
+  height: 1rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: var(--color-secondary-light);
+}
+
+.progress-indicator {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  background-color: var(--color-primary);
+  transition: transform 0.3s ease;
+}
+
+.progress-sm {
+  height: 0.5rem;
+}
