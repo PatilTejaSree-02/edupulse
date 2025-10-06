@@ -5,6 +5,7 @@ import { Clock, Users, Star, BookOpen } from "lucide-react";
 import "./CourseCard.css";
 
 const CourseCard = ({ 
+  id,
   title, 
   instructor, 
   duration, 
@@ -13,7 +14,8 @@ const CourseCard = ({
   price, 
   image, 
   level, 
-  category 
+  category,
+  onEnroll
 }) => {
   return (
     <Card className="course-card">
@@ -66,7 +68,7 @@ const CourseCard = ({
       
       <CardFooter className="course-card-footer">
         <div className="course-card-price">{price}</div>
-        <Button variant="default">
+        <Button variant="default" onClick={onEnroll}>
           <BookOpen />
           Enroll Now
         </Button>

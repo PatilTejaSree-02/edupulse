@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button.jsx";
-import { BookOpen, Menu, User } from "lucide-react";
+import { BookOpen, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -12,19 +13,15 @@ const Header = () => {
         </div>
         
         <nav className="header-nav">
-          <a href="#" className="header-nav-link">Courses</a>
-          <a href="#" className="header-nav-link">Dashboard</a>
-          <a href="#" className="header-nav-link">About</a>
-          <a href="#" className="header-nav-link">Contact</a>
+          <Link to="/courses" className="header-nav-link">Courses</Link>
+          <Link to="/dashboard" className="header-nav-link">Dashboard</Link>
+          <Link to="/about" className="header-nav-link">About</Link>
+          <Link to="/contact" className="header-nav-link">Contact</Link>
         </nav>
 
         <div className="header-actions">
-          <Button variant="ghost" size="sm">
-            Sign In
-          </Button>
-          <Button variant="default" size="sm">
-            Get Started
-          </Button>
+          <Link to="/signin"><Button variant="ghost" size="sm">Sign In</Button></Link>
+          <Link to="/get-started"><Button variant="default" size="sm">Get Started</Button></Link>
           <Button variant="ghost" size="icon" className="header-mobile-menu">
             <Menu />
           </Button>

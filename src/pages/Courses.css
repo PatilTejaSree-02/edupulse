@@ -1,0 +1,6 @@
+.page { max-width: 1200px; margin: 0 auto; padding: 2.25rem 1.25rem; background: linear-gradient(180deg, #eef2ff 0%, #f5f3ff 50%, #ffffff 100%); border-radius: 18px; box-shadow: 0 12px 28px rgba(99, 102, 241, 0.12); }
+.page-title { font-size: 2.125rem; font-weight: 800; margin-bottom: 0.5rem; color: #3730a3; }
+.page-text { color: #312e81; margin-bottom: 1.5rem; }
+.page-block { margin-top: 0.5rem; }
+
+

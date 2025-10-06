@@ -1,0 +1,14 @@
+.page { max-width: 960px; margin: 0 auto; padding: 2.25rem 1.25rem; background: linear-gradient(180deg, #fff7ed 0%, #fffbeb 50%, #ffffff 100%); border-radius: 16px; box-shadow: 0 10px 25px rgba(245, 158, 11, 0.12); }
+.page-title { font-size: 2rem; font-weight: 800; margin: 0 0 1rem; color: #b45309; }
+.page-text { color: #1f2937; margin-bottom: 1rem; }
+
+.form { max-width: 480px; }
+.form-field { margin-bottom: 0.75rem; }
+.form-label { display: block; margin-bottom: 4px; font-weight: 600; }
+.form-input, .form-textarea { width: 100%; padding: 0.65rem 0.75rem; border: 1px solid #fcd34d; border-radius: 10px; background: #ffffff; box-shadow: inset 0 1px 3px rgba(0,0,0,0.04); }
+
+.button { display: inline-block; padding: 0.6rem 1.05rem; border-radius: 9999px; cursor: pointer; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.button.primary { background: linear-gradient(90deg, #fb923c, #f59e0b); color: #fff; box-shadow: 0 8px 16px rgba(245, 158, 11, .25); }
+.button.primary:hover { transform: translateY(-1px); box-shadow: 0 12px 20px rgba(245, 158, 11, .35); }
+
+
