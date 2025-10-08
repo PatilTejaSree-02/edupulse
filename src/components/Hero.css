@@ -29,6 +29,30 @@
   font-weight: 700;
   color: white;
   line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-brand {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffffff 0%, #e6f3ff 50%, #d4f0f0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  padding: 0.5rem 0;
+  overflow: visible;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .hero-title-accent {
@@ -68,7 +92,7 @@
 .hero-stat-icon {
   width: 2rem;
   height: 2rem;
-  color: var(--color-accent);
+  color: white;
 }
 
 .hero-stat-value {
@@ -114,8 +138,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .hero-title {
-    font-size: 3.75rem;
+  .hero-brand {
+    font-size: 6rem;
+    line-height: 1.1;
+    padding: 0.75rem 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 2.5rem;
   }
   
   .hero-description {

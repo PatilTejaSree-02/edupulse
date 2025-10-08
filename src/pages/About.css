@@ -3,22 +3,124 @@
   max-width: 960px;
   margin: 0 auto;
   padding: 2.25rem 1.25rem;
-  background: linear-gradient(180deg, #f0f9ff 0%, #e6fffa 40%, #fff 100%);
+  background: linear-gradient(180deg, #f0f7ff 0%, #f5fbfb 40%, #fff 100%);
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.10);
+  box-shadow: 0 10px 25px rgba(60, 100, 120, 0.10);
 }
+
 .page-title {
   font-size: 2.125rem;
   font-weight: 800;
-  margin: 0 0 1rem;
-  background: linear-gradient(90deg, #0ea5e9, #10b981, #f59e0b);
+  margin: 0 0 2rem;
+  background: linear-gradient(90deg, hsl(210, 45%, 35%), hsl(180, 35%, 40%), hsl(160, 40%, 45%));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-align: center;
 }
-.page-text {
-  color: #0f172a;
-  opacity: 0.85;
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary-light);
+  padding-bottom: 0.5rem;
+}
+
+.about-text {
+  color: var(--color-foreground);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-feature {
+  background: var(--color-card);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-smooth);
+}
+
+.about-feature:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.about-feature h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary);
+}
+
+.about-feature p {
+  color: var(--color-muted-foreground);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.about-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-foreground);
+  line-height: 1.6;
+}
+
+.about-list li:last-child {
+  border-bottom: none;
+}
+
+.about-list strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1.5rem 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .about-section-title {
+    font-size: 1.25rem;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-feature {
+    padding: 1.25rem;
+  }
 }
 
 

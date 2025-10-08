@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button.jsx";
 import { Play, BookOpen, Users, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-learning.jpg";
 import "./Hero.css";
 
@@ -10,9 +11,12 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
+              <span className="hero-brand">Skillsync</span>
+            </h1>
+            <h2 className="hero-subtitle">
               Learn Without
               <span className="hero-title-accent"> Limits</span>
-            </h1>
+            </h2>
             <p className="hero-description">
               Join thousands of learners mastering new skills with our interactive courses, 
               expert instructors, and hands-on projects.
@@ -20,13 +24,17 @@ const Hero = () => {
           </div>
           
           <div className="hero-buttons">
-            <Button variant="hero" size="lg">
-              <Play />
-              Start Learning
-            </Button>
-            <Button variant="outline" size="lg" className="button-outline-white">
-              Browse Courses
-            </Button>
+            <Link to="/signin">
+              <Button variant="hero" size="lg">
+                <Play />
+                Start Learning
+              </Button>
+            </Link>
+            <Link to="/courses">
+              <Button variant="outline" size="lg" className="button-outline-white">
+                Browse Courses
+              </Button>
+            </Link>
           </div>
 
           <div className="hero-stats">

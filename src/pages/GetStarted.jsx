@@ -5,6 +5,7 @@ import "./GetStarted.css";
 const GetStarted = () => {
   const [form, setForm] = useState({
     fullName: "",
+    username: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -19,7 +20,7 @@ const GetStarted = () => {
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!form.fullName || !form.email || !form.password) {
+    if (!form.fullName || !form.username || !form.email || !form.password) {
       alert("Please fill all required fields");
       return;
     }
@@ -38,6 +39,7 @@ const GetStarted = () => {
         method: 'POST',
         body: JSON.stringify({
           fullName: form.fullName,
+          username: form.username,
           email: form.email,
           password: form.password,
         }),
@@ -59,6 +61,11 @@ const GetStarted = () => {
         <div className="form-field">
           <label className="form-label" htmlFor="fullName">Full name</label>
           <input id="fullName" name="fullName" className="form-input" value={form.fullName} onChange={update} required />
+        </div>
+        
+        <div className="form-field">
+          <label className="form-label" htmlFor="username">Username</label>
+          <input id="username" name="username" className="form-input" value={form.username} onChange={update} required />
         </div>
         
         <div className="form-field">

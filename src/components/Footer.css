@@ -8,6 +8,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  justify-content: space-between;
 }
 
 .footer-section {
@@ -80,12 +81,11 @@
 
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr auto;
+    align-items: start;
   }
-}
-
-@media (min-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: repeat(4, 1fr);
+  
+  .footer-contact-section {
+    text-align: right;
   }
 }

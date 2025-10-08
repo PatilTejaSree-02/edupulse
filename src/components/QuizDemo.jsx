@@ -124,7 +124,7 @@ const QuizDemo = () => {
     <section className="quiz-section">
       <div className="container">
         <div className="quiz-header">
-          <h2 className="quiz-title">Interactive Learning</h2>
+          <h2 className="quiz-title">Quiz Demo</h2>
           <p className="quiz-description">
             Test your knowledge with our interactive quizzes and get instant feedback.
           </p>
