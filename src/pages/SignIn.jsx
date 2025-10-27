@@ -9,8 +9,15 @@ const SignIn = () => {
 
   const submit = async (e) => {
     e.preventDefault();
+    
+    // Validate that email and password are provided
+    if (!email || !password) {
+      alert('Please enter both email and password');
+      return;
+    }
+    
     try {
-      const result = await signIn(email || 'admin', password || 'password');
+      const result = await signIn(email, password);
       if (result.authenticated) {
         alert('Signed in successfully');
         window.location.href = '/dashboard';
@@ -18,7 +25,7 @@ const SignIn = () => {
         alert('Login failed');
       }
     } catch (err) {
-      alert('Login failed');
+      alert('Login failed: ' + err.message);
     }
   };
 
