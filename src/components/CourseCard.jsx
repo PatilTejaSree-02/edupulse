@@ -70,7 +70,7 @@ const CourseCard = ({
         <div className="course-card-price">{price}</div>
         <Button variant="default" onClick={onEnroll}>
           <BookOpen />
-          Enroll Now
+          Go to Course
         </Button>
       </CardFooter>
     </Card>
